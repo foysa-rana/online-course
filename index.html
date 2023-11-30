@@ -37,7 +37,7 @@
   </head>
   <body>
     <!-- sign up modal -->
-    <section class="modal-section">
+    <section class="modal-section sign-modal-section">
       <div class="container">
         <div class="wrapper">
           <!-- Modal -->
@@ -51,7 +51,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4>Please Log In to Continue</h4>
+                  <h4>Log In to Continue</h4>
                   <button
                     type="button"
                     class="btn-close"
@@ -61,26 +61,97 @@
                 </div>
                 <div class="modal-body">
                   <div class="signin-signup-btn d-flex justify-content-around">
-                    <button class="sign-btn">Sign In</button>
-                    <button class="sign-btn">Sign Up</button>
+                    <button class="sign-btn custom-sign-btn sign-in-btn active">
+                      Sign In
+                    </button>
+                    <button class="sign-btn custom-sign-btn sign-up-btn">
+                      Sign Up
+                    </button>
                   </div>
-                  <!-- <div class="signin">
+                  <div class="signin show">
                     <form action="">
-                      <input
-                        type="text"
-                        name="user"
-                        id="user"
-                        placeholder="username or email"
-                      />
-                      <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="password"
-                      />
+                      <div class="form-group">
+                        <div class="form-icon">
+                          <i class="ri-user-line"></i>
+                          <input
+                            class="w-100"
+                            type="text"
+                            name="user"
+                            id="user"
+                            placeholder="username or email"
+                          />
+                        </div>
+                        <div class="form-icon">
+                          <i class="ri-lock-line"></i>
+                          <input
+                            class="w-100"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="password"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group remeber-group">
+                        <div class="check">
+                          <input
+                            type="checkbox"
+                            name="remember"
+                            id="remember"
+                          />
+                          <label class="remember" for="remember"
+                            >Remember Me</label
+                          >
+                        </div>
+                        <a href="#" class="nav-link forgot">Forgot Password</a>
+                      </div>
+                      <button class="sign-btn sign-submit mt-4" type="button">
+                        Sign In
+                      </button>
                     </form>
                   </div>
-                  <div class="signup d-none"></div> -->
+                  <div class="signup">
+                    <form action="">
+                      <div class="form-group">
+                        <input
+                          class="w-100"
+                          type="text"
+                          name="username"
+                          id="username"
+                          placeholder="Username"
+                        />
+                        <input
+                          class="w-100"
+                          type="text"
+                          name="fname"
+                          id="fname"
+                          placeholder="First name"
+                        />
+                        <input
+                          class="w-100"
+                          type="text"
+                          name="lanme"
+                          id="lname"
+                          placeholder="Last name"
+                        />
+                        <input
+                          type="number"
+                          name="phone"
+                          id="phone"
+                          placeholder="Phone"
+                        />
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <button class="sign-btn sign-submit mt-4" type="button">
+                        Sign Up
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,32 +271,32 @@
       </nav>
     </section>
     <!-- end of topbar -->
-    <!-- header -->
-    <header>
-      <!-- banner -->
-      <section class="banner overlay">
-        <div class="container">
-          <div class="wrapper d-flex flex-column justify-content-center">
-            <h2 class="text-white">
-              Welcome
-              <span class="d-block mx-4 mt-1">
-                <span class="fw-normal">To</span>
-                <span class="text-warning Permanent-Marker">Techvally</span>
-              </span>
-            </h2>
-            <p class="text-white">
-              <span class="d-block">Beleive Yourself</span>
-              <span class="d-block">Continue With Us</span>
-              <span class="d-block">For Successful Career.</span>
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- end of banner -->
-    </header>
-    <!-- end of header -->
     <!-- main -->
     <main>
+      <!-- header -->
+      <section class="header">
+        <!-- banner -->
+        <section class="banner overlay">
+          <div class="container">
+            <div class="wrapper d-flex flex-column justify-content-center">
+              <h2 class="text-white">
+                Welcome
+                <span class="d-block mx-4 mt-1">
+                  <span class="fw-normal">To</span>
+                  <span class="text-warning Permanent-Marker">Techvally</span>
+                </span>
+              </h2>
+              <p class="text-white">
+                <span class="d-block">Beleive Yourself</span>
+                <span class="d-block">Continue With Us</span>
+                <span class="d-block">For Successful Career.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- end of banner -->
+      </section>
+      <!-- end of header -->
       <!-- recent courses -->
       <section class="recent-courses">
         <div class="container">
@@ -711,44 +782,6 @@
                     <a href="#" class="btn custom-btn mb-4">Read More</a>
                   </div>
                 </div>
-                <!-- single info card -->
-                <div class="card">
-                  <div class="img-content overlay-radius">
-                    <div class="border-circle">
-                      <img
-                        src="./images/trainer-profile/david.jpg"
-                        alt="David"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-content text-center">
-                    <h4 class="name mt-3">David</h4>
-                    <p class="position small mb-3">Cheif Instructor</p>
-                    <p class="details mb-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="btn custom-btn mb-4">Read More</a>
-                  </div>
-                </div>
-                <!-- single info card -->
-                <div class="card">
-                  <div class="img-content overlay-radius">
-                    <div class="border-circle">
-                      <img
-                        src="./images/trainer-profile/david.jpg"
-                        alt="David"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-content text-center">
-                    <h4 class="name mt-3">David</h4>
-                    <p class="position small mb-3">Cheif Instructor</p>
-                    <p class="details mb-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="btn custom-btn mb-4">Read More</a>
-                  </div>
-                </div>
               </div>
               <a href="#" class="view-all btn custom-btn"
                 >View All Trainer<i class="ri-arrow-right-line"></i
@@ -767,41 +800,43 @@
           <div class="footer-row mb-3">
             <div class="left">
               <!-- footer-about -->
-              <div class="footer-about position-relative d-grid">
-                <div class="branding">
-                  <a
-                    class="navbar-brand fs-2 Permanent-Marker text-white"
-                    href="#"
-                    >Techvally</a
-                  >
+              <div class="footer-about position-relative ">
+                <div class="wrap">
+                  <div class="branding text-center">
+                    <a
+                      class="navbar-brand fs-2 Permanent-Marker text-white"
+                      href="#"
+                      >Techvally</a
+                    >
+                  </div>
+                  <ul class="social-icons">
+                    <li>
+                      <a class="nav-link" href="#">
+                        <i class="ri-facebook-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">
+                        <i class="ri-twitter-x-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">
+                        <i class="ri-linkedin-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">
+                        <i class="ri-whatsapp-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">
+                        <i class="ri-instagram-line"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="social-icons">
-                  <li>
-                    <a class="nav-link" href="#">
-                      <i class="ri-facebook-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">
-                      <i class="ri-twitter-x-line"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">
-                      <i class="ri-linkedin-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">
-                      <i class="ri-whatsapp-line"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">
-                      <i class="ri-instagram-line"></i>
-                    </a>
-                  </li>
-                </ul>
                 <p class="about-text small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
                   nemo mollitia laudantium fugit at explicabo quam sit
@@ -837,7 +872,7 @@
                 <h4 class="text-white footer-title d-inline-block">
                   Popular Courses
                 </h4>
-                <ul class="ps-0 mt-2">
+                <ul class="ps-0">
                   <li>
                     <a href="" class="nav-link"
                       ><i class="ri-check-double-line"></i> Front-End
@@ -914,6 +949,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- js -->
+    <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

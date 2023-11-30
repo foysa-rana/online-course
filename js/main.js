@@ -9,16 +9,6 @@ let navigation = () => {
 }
 // navigation();
 
-// topbar sticky
-let stickyTopBar = () => {
-    let topBar = document.querySelector('.topbar');
-    window.addEventListener('scroll', () => {
-        let banner = document.querySelector('.banner').offsetHeight;
-        let scrollHeigt = this.scrollY;
-    })
-}
-stickyTopBar();
-
 // searchbar 
 let searchBar = () => {
     let searchBtnDesktop = document.querySelector('.search-btn-desktop');
@@ -39,88 +29,41 @@ let searchBar = () => {
 }
 searchBar();
 
+// sign in sign up
+let sign = () => {
+    let signInBtn = document.querySelector('.sign-in-btn');
+    let signUpBtn = document.querySelector('.sign-up-btn');
+    let sigIn = document.querySelector('.signin');
+    let sigUp = document.querySelector('.signup');
 
+    signInBtn.addEventListener('click', () => {
+      signInBtn.classList.add('active');
+      signUpBtn.classList.remove('active');
+      sigIn.classList.add('show');
+      sigUp.classList.remove('show');
+    })
+    signUpBtn.addEventListener('click', () => {
+      signInBtn.classList.remove('active');
+      signUpBtn.classList.add('active');
+      sigIn.classList.remove('show');
+      sigUp.classList.add('show');
+    })
+}
+sign();
 
-// swiper
-let swiper = new Swiper('.swiper-horizontal', {
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 10,
-  centerSlide: 'true',
-  fade: 'true',
-  grabCursor: 'true',
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
-    // when window width is >= 992px
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 20
-    },
-    // when window width is >= 1200px
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 50
-    },
-    // when window width is >= 1400px
-    1400: {
-      slidesPerView: 5,
-      spaceBetween: 30
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets : true,
-  },
-  autoplay: {
-    delay: 5000,
-  },
-})
+// sidebar
+let sidebar = () => {
+  let bar = document.querySelector('.sidebar');
+  let showIcon = document.querySelector('.show-icon');
+  let hideIcon = document.querySelector('.hide-icon');
 
-// seminar swiper
-let  seminarSwiper = new Swiper(".swiper-seminar", {
-  direction: "vertical",
-  spaceBetween: 20,
-  centerSlide: 'true',
-  fade: 'true',
-  grabCursor: 'true',
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets : true,
-  },
-  autoplay: {
-    delay: 5500,
-  },
-});
-
-//swiper seminar height
-let swiperSeminarHeight = () => {
-  addEventListener('resize', () => {
-    let cardHeight = document.querySelector('.swiper-seminar .card').clientHeight;
-    let slideHeight = document.querySelector('.swiper-seminar')
-    slideHeight.style.height = cardHeight + "px";
+  showIcon.addEventListener('click', () => {
+    showIcon.style.display = 'none';
+    bar.classList.add('shrink');
   })
-  addEventListener('load', () => {
-    let cardHeight = document.querySelector('.swiper-seminar .card').clientHeight;
-    let slideHeight = document.querySelector('.swiper-seminar')
-    slideHeight.style.height = cardHeight + "px";
+  hideIcon.addEventListener('click', () => {
+    showIcon.style.display = 'block';
+    bar.classList.remove('shrink');
   })
 }
-swiperSeminarHeight();
+sidebar();
