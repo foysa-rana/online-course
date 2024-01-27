@@ -29,6 +29,18 @@ let searchBar = () => {
 }
 searchBar();
 
+//profile
+let profile = () => {
+  let profileBtn = document.querySelector('.profile');
+  let profileInfo = document.querySelector('.profile-info');
+
+  profileBtn.addEventListener('click', () => {
+    profileInfo.classList.toggle('profile-show');
+    console.log('clicked');
+  });
+}
+profile();
+
 // sign in sign up
 let sign = () => {
     let signInBtn = document.querySelector('.sign-in-btn');

@@ -146,6 +146,18 @@
                           id="email"
                           placeholder="Email"
                         />
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          placeholder="password"
+                        />
+                        <input
+                          type="password"
+                          name="confirm-password"
+                          id="confirm-password"
+                          placeholder="Confirm Password"
+                        />
                       </div>
                       <button class="sign-btn sign-submit mt-4" type="button">
                         Sign Up
@@ -177,7 +189,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand fs-2 Permanent-Marker" href="#">Techvally</a>
+          <a class="navbar-brand fs-2 Permanent-Marker" href="/">Techvally</a>
           <div
             class="offcanvas offcanvas-start flex-lg-row"
             tabindex="-1"
@@ -204,13 +216,12 @@
               <!-- left -->
               <ul class="left navbar-nav flex-grow-1 pe-3">
                 <li>
-                  <form class="mb-3 desktop-hide" role="search">
+                  <form class="mb-3 desktop-hide">
                     <div class="form-group position-relative">
                       <input
                         class="form-control search search-mobile"
                         type="search"
                         placeholder="Search"
-                        aria-label="Search"
                       />
                       <button
                         class="search-btn search-btn-mobile"
@@ -222,23 +233,25 @@
                   </form>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
+                  <a class="nav-link" href="./pages/course-list.html"
+                    >Courses</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="./pages/about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="./pages/contact.html">Contact</a>
                 </li>
               </ul>
               <!-- end of left -->
             </div>
           </div>
           <!-- right -->
-          <ul class="right navbar-nav d-flex flex-row">
+          <ul class="right navbar-nav d-flex flex-row all-items-center">
             <!-- mobile-hide -->
             <form class="me-4 mobile-hide position-relative" role="search">
               <div class="form-group position-relative">
@@ -256,7 +269,7 @@
                 </button>
               </div>
             </form>
-            <li class="nav-item">
+            <li class="nav-item" style="height: 40px; margin-top: 4px">
               <a
                 class="nav-link login-btn"
                 data-bs-toggle="modal"
@@ -264,6 +277,39 @@
                 href="#"
                 >Log In</a
               >
+            </li>
+            <li class="nav-item position-relative d-none">
+              <a class="nav-link profile" href="#">
+                <div class="profile-img">
+                  <img src="./images/trainer-profile/david.jpg" alt="" />
+                </div>
+              </a>
+              <ul class="profile-info">
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="profile-icon"
+                      ><i class="ri-user-line"></i
+                    ></span>
+                    <span class="icon-text">Profile</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="profile-icon"
+                      ><i class="ri-file-list-line"></i
+                    ></span>
+                    <span class="icon-text">My Courses</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="profile-icon"
+                      ><i class="ri-logout-circle-line"></i
+                    ></span>
+                    <span class="icon-text">Logout</span>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
           <!-- end of right -->
@@ -281,14 +327,14 @@
             <div class="wrapper d-flex flex-column justify-content-center">
               <h2 class="text-white">
                 Welcome
-                <span class="d-block mx-4 mt-1">
+                <span class="d-block mt-1">
                   <span class="fw-normal">To</span>
                   <span class="text-warning Permanent-Marker">Techvally</span>
                 </span>
               </h2>
               <p class="text-white">
-                <span class="d-block">Beleive Yourself</span>
-                <span class="d-block">Continue With Us</span>
+                <span class="d-block">Beleive Yourself,</span>
+                <span class="d-block">Continue With Us,</span>
                 <span class="d-block">For Successful Career.</span>
               </p>
             </div>
@@ -325,7 +371,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -338,7 +386,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -351,7 +401,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -364,7 +416,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -377,7 +431,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -390,7 +446,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -398,7 +456,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
               </div>
-              <a href="#" class="view-all btn custom-btn"
+              <a href="./pages/course-list.html" class="view-all btn custom-btn"
                 >View All Courses<i class="ri-arrow-right-line"></i
               ></a>
             </div>
@@ -435,7 +493,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -448,7 +508,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -461,7 +523,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -474,7 +538,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -487,7 +553,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                   <!-- single item -->
@@ -500,7 +568,9 @@
                       <h5 class="title">Front-End Development</h5>
                       <p class="trainer">Trainer : Foysal Rana</p>
                       <h5 class="fee">$99</h5>
-                      <a href="#" class="btn custom-btn">Read More</a>
+                      <a href="./pages/course.html" class="btn custom-btn"
+                        >Read More</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -508,7 +578,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
               </div>
-              <a href="#" class="view-all btn custom-btn"
+              <a href="./pages/course-list.html" class="view-all btn custom-btn"
                 >View All Courses<i class="ri-arrow-right-line"></i
               ></a>
             </div>
@@ -722,7 +792,11 @@
                     <p class="details mb-3">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="#" class="btn custom-btn mb-4">Read More</a>
+                    <a
+                      href="./pages/trainer-profile.html"
+                      class="btn custom-btn mb-4"
+                      >Read More</a
+                    >
                   </div>
                 </div>
                 <!-- single info card -->
@@ -741,7 +815,11 @@
                     <p class="details mb-3">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="#" class="btn custom-btn mb-4">Read More</a>
+                    <a
+                      href="./pages/trainer-profile.html"
+                      class="btn custom-btn mb-4"
+                      >Read More</a
+                    >
                   </div>
                 </div>
                 <!-- single info card -->
@@ -760,7 +838,11 @@
                     <p class="details mb-3">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="#" class="btn custom-btn mb-4">Read More</a>
+                    <a
+                      href="./pages/trainer-profile.html"
+                      class="btn custom-btn mb-4"
+                      >Read More</a
+                    >
                   </div>
                 </div>
                 <!-- single info card -->
@@ -779,7 +861,11 @@
                     <p class="details mb-3">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="#" class="btn custom-btn mb-4">Read More</a>
+                    <a
+                      href="./pages/trainer-profile.html"
+                      class="btn custom-btn mb-4"
+                      >Read More</a
+                    >
                   </div>
                 </div>
               </div>
@@ -800,7 +886,7 @@
           <div class="footer-row mb-3">
             <div class="left">
               <!-- footer-about -->
-              <div class="footer-about position-relative ">
+              <div class="footer-about position-relative">
                 <div class="wrap">
                   <div class="branding text-center">
                     <a
